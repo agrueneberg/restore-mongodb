@@ -1,0 +1,3 @@
+[submodule "vendor/restore"]
+	path = vendor/restore
+	url = https://github.com/jcoglan/restore

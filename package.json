@@ -1,0 +1,31 @@
+{
+    "name": "restore-mongodb",
+    "description": "A MongoDB adapter for reStore, a remoteStorage server.",
+    "version": "0.0.0",
+    "author": {
+        "name": "Alexander Grüneberg",
+        "email": "alexander.grueneberg@googlemail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/agrueneberg/restore-mongodb"
+    },
+    "licenses": [{
+        "type": "The MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    }],
+    "main": "./lib/restore-mongo.js",
+    "dependencies": {
+        "mongodb": "~1.3.12",
+        "async": "~0.2.9"
+    },
+    "devDependencies": {
+        "jsclass": "~3.0.0"
+    },
+    "scripts": {
+        "test": "node spec/runner.js"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    }
+}
