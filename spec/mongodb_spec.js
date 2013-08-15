@@ -1,26 +1,34 @@
-var MongoDB = require("../lib/restore-mongodb");
+var MongoDB;
 
-JS.Test.describe("MongoDB store", function() { with(this) {
+MongoDB = require("../lib/restore-mongodb");
 
-  before(function() { with(this) {
-    stub(require("../lib/utils"), "hashRounds", 1)
-    store = new MongoDB({
-      host:     "localhost",
-      port:     27017,
-      database: "restore-test"
+JS.Test.describe("MongoDB store", function () {
+
+    with(this) {
+
+    before(function () {
+        with(this) {
+            stub(require("../lib/utils"), "hashRounds", 1)
+            store = new MongoDB({
+                host: "localhost",
+                port: 27017,
+                database: "restore-test"
+            })
+        }
     })
-  }})
 
-  after(function(resume) { with(this) {
-    store.getClient(function(error, client) {
-      client.dropDatabase(function(error, result) {
-        client.close(function(error, result) {
-          resume()
-        })
-      })
+    after(function (resume) {
+        with(this) {
+            store.getClient(function (err, client) {
+                client.dropDatabase(function (err, result) {
+                    client.close(function (err, result) {
+                        resume()
+                    })
+                })
+            })
+        }
     })
-  }})
 
-  itShouldBehaveLike("storage backend")
+    itShouldBehaveLike("storage backend")
 
 }})
