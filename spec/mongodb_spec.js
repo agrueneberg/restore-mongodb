@@ -19,7 +19,7 @@ JS.Test.describe("MongoDB store", function () {
 
     after(function (resume) {
         with(this) {
-            store.getClient(function (err, client) {
+            store.getClient.then(function (client) {
                 client.dropDatabase(function (err, result) {
                     client.close(function (err, result) {
                         resume()
