@@ -1,5 +1,6 @@
-var MongoDB;
+var JS, MongoDB;
 
+JS = require("jstest");
 MongoDB = require("../lib/restore-mongodb");
 
 JS.Test.describe("MongoDB store", function () {

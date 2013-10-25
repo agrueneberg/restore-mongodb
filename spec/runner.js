@@ -1,7 +1,6 @@
 process.env.SILENT = "1"
 
-require("jsclass")
-JS.require("JS.Test")
+var JS = require("jstest")
 
 require("../vendor/restore/spec/restore/storage_spec")
 require("../vendor/restore/spec/store_spec.js")
