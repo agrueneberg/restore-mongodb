@@ -1,7 +1,7 @@
 restore-mongodb
 ===============
 
-A MongoDB adapter for reStore, a remoteStorage server.
+A MongoDB adapter for [reStore](https://github.com/jcoglan/restore), a remoteStorage server.
 
 How to run the tests
 --------------------
