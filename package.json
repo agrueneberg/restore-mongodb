@@ -1,7 +1,7 @@
 {
     "name": "restore-mongodb",
     "description": "A MongoDB adapter for reStore, a remoteStorage server.",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "author": {
         "name": "Alexander Grüneberg",
         "email": "alexander.grueneberg@googlemail.com"
