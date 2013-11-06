@@ -3,6 +3,13 @@ restore-mongodb
 
 A MongoDB adapter for [reStore](https://github.com/jcoglan/restore), a remoteStorage server.
 
+
+Status
+------
+
+Experimental, not well tested.
+
+
 How to use it
 -------------
 
