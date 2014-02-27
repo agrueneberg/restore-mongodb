@@ -1,6 +1,6 @@
 {
     "name": "restore-mongodb",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A MongoDB adapter for reStore, a remoteStorage server.",
     "keywords": ["remoteStorage", "reStore", "MongoDB", "adapter"],
     "bugs": "https://github.com/agrueneberg/restore-mongodb/issues",
